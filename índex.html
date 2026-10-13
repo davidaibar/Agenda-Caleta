@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Caleta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Agenda Caleta</h1>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>¿Ya sabés a dónde ir?</h2>
+            <p>Encontrá eventos, actividades y propuestas locales!</p>
+
+            <input 
+                type="text" 
+                id="buscador" 
+                placeholder="Buscar un evento..."
+            >
+        </section>
+
+        <section id="eventos">
+
+            <h2>Próximos eventos</h2>
+
+            <div class="filtros">
+                <button onclick="filtrarEventos('todos')">Todos</button>
+                <button onclick="filtrarEventos('musica')">Música</button>
+                <button onclick="filtrarEventos('cultura')">Cultura</button>
+                <button onclick="filtrarEventos('deportes')">Deportes</button>
+            </div>
+
+            <div id="lista-eventos">
+
+                <article class="evento" data-categoria="musica">
+                    <h3>Entre Acordes</h3>
+                    <p>El regreso de la escena indie con más música que nunca.</p>
+                    <p>04 de octubre</p>
+                    <p>Biblioteca Municipal</p>
+                    <button>Ver evento</button>
+                </article>
+
+                <article class="evento" data-categoria="cultura">
+                    <h3>Feria Americana</h3>
+                    <p>Productos y propuestas de emprendedores locales.</p>
+                    <p>04 de noviembre</p>
+                    <p>Centro Salteño</p>
+                    <button>Ver evento</button>
+                </article>
+
+                <article class="evento" data-categoria="deportes">
+                    <h3>EICO vs Biología</h3>
+                    <p>El partido más esperado de todo Caleta.</p>
+                    <p>03 de diciembre</p>
+                    <p>Complejo Municipal</p>
+                    <button>Ver evento</button>
+                </article>
+
+                <article class="evento" data-categoria="deportes">
+                    <h3>Intemperie</h3>
+                    <p>La nueva obra de teatro del elenco ganador del Festival Juvenil de Teatro N° 37.</p>
+                    <p>03 de octubre</p>
+                    <p>CeMEPA</p>
+                    <button>Ver evento</button>
+                </article>
+
+                <article class="evento" data-categoria="deportes">
+                    <h3>Festival Juvenil de Teatro N° 38</h3>
+                    <p>Elencos de toda la Patagonia reunidos en un solo lugar.</p>
+                    <p>24, 25, 26 y 27 de septiembre</p>
+                    <p>GAS</p>
+                    <button>Ver evento</button>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        <p>Eventos Locales © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
