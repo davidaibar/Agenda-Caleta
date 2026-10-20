@@ -110,3 +110,48 @@ footer {
     padding: 25px;
     margin-top: 30px;
 }
+/* Mejoras visuales para Agenda Caleta */
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #168653;
+}
+
+#buscador:focus {
+    outline: 2px solid #168653;
+    outline-offset: 2px;
+}
+
+.evento {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.filtros button,
+.evento button {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.filtros button:hover,
+.evento button:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    #lista-eventos {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
